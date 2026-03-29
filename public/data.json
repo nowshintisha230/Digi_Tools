@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Pro Resume Builder",
+    "description": "Create professional resumes in minutes.\nOptimized for ATS systems used by recruiters.",
+    "price": 10,
+    "validity": "One-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "✔️ 100+ templates",
+      "✔️ ATS optimization",
+      "✔️ Export to PDF"
+    ],
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "AI Cover Letter Generator",
+    "description": "Generate tailored cover letters instantly.\nPowered by AI to match job descriptions.",
+    "price": 9,
+    "validity": "Monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "✔️ AI generated letters",
+      "✔️ Job description analysis",
+      "✔️ Multiple tone styles"
+    ],
+    "icon": "✍️"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Website Builder",
+    "description": "Build a stunning developer portfolio.\nNo coding required with modern templates.",
+    "price": 49,
+    "validity": "One-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "✔️ 50+ portfolio templates",
+      "✔️ Custom domain support",
+      "✔️ SEO optimized pages"
+    ],
+    "icon": "🌐"
+  },
+  {
+    "id": 4,
+    "name": "AI Interview Coach",
+    "description": "Practice job interviews with AI.\nGet feedback on answers and confidence.",
+    "price": 12,
+    "validity": "Monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "✔️ Mock interviews",
+      "✔️ Real-time feedback",
+      "✔️ Common interview questions"
+    ],
+    "icon": "🎤"
+  },
+  {
+    "id": 5,
+    "name": "LinkedIn Profile Optimizer",
+    "description": "Improve your LinkedIn profile visibility.\nGet AI suggestions for better reach.",
+    "price": 25,
+    "validity": "Yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "✔️ Headline optimization",
+      "✔️ Profile keyword suggestions",
+      "✔️ Experience rewriting"
+    ],
+    "icon": "💼"
+  },
+  {
+    "id": 6,
+    "name": "Job Tracker Pro",
+    "description": "Track all your job applications.\nStay organized and never miss follow-ups.",
+    "price": 5,
+    "validity": "Monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "✔️ Application tracking",
+      "✔️ Interview reminders",
+      "✔️ Status dashboard"
+    ],
+    "icon": "🧳"
+  },
+  {
+    "id": 7,
+    "name": "Freelancer Proposal Kit",
+    "description": "Win more freelance clients.\nReady-to-use proposal templates.",
+    "price": 19,
+    "validity": "One-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "✔️ 30+ proposal templates",
+      "✔️ Client communication scripts",
+      "✔️ Editable formats"
+    ],
+    "icon": "📤"
+  },
+  {
+    "id": 8,
+    "name": "AI Skill Assessment",
+    "description": "Test your professional skills.\nGet detailed reports and improvement plans.",
+    "price": 15,
+    "validity": "Yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "✔️ Skill quizzes",
+      "✔️ Detailed performance report",
+      "✔️ Personalized learning plan"
+    ],
+    "icon": "📊"
+  }
+]
