@@ -5,7 +5,7 @@ const Data = ({getDataPromise}) => {
     console.log(Datas)
     return (
         <div>
-        <div className='text-center my-7'>
+        <div className='text-center my-7 mx-5'>
         <h1 className='text-3xl font-bold'>Premium Digital Tools</h1>
         <p className='text-gray-500'>Choose from our curated collection of premium digital products designed to boost your productivity and creativity.</p>    
         </div>
