@@ -1,8 +1,4 @@
-# 🛒 Digi Tools Buying Website
-
-A modern and responsive **digital tools purchasing web application** where users can browse products, add them to a cart, view selected items, see the total price, and proceed to checkout with interactive notifications.
-
----
+# Project Title: 🛒 Digi Tools Buying Website
 
 ## 📌 Project Description
 
