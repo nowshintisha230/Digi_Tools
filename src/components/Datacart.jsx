@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Datacart = ({values}) => {
-   
+  
+  const [buy, setBuy] = useState(false)
+
+  const handleBuy = () => {
+    setBuy(true)
+  }
+
     return (
 
         <div className='p-4 space-y-3  border-2 bg-gray-100 rounded-2xl shadow-lg'>
@@ -35,7 +41,10 @@ const Datacart = ({values}) => {
     </span>
   ))}
 </div>
-<button className='btn bg-gradient-to-r from-blue-500 to-purple-500 p-6 rounded-2xl w-full  text-white  lg:text-xl font-bold'>Buy Now</button>
+<button onClick={handleBuy} className='btn bg-gradient-to-r from-blue-500 to-purple-500 p-6 rounded-2xl w-full  text-white  lg:text-xl font-bold'>{buy?"Added to the cart":"Buy Now"}</button>
+
+
+
 
         </div>
     );

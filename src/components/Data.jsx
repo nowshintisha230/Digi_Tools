@@ -1,8 +1,16 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import Datacart from '../components/Datacart.jsx'
+import Cart from './Cart';
+
 const Data = ({getDataPromise}) => {
-    const Datas =use(getDataPromise)
+    const Datas =use(getDataPromise);
     console.log(Datas)
+
+    const[cart,setCart]=useState("products")
+   console.log(cart);
+   
+    
+    
     return (
         <div>
         <div className='text-center my-7 mx-5'>
@@ -12,18 +20,19 @@ const Data = ({getDataPromise}) => {
 
 
         <div className='  flex gap-3.5 justify-center items-center'>
- <button className=' btn bg-gradient-to-r from-blue-500 to-purple-500 p-5 rounded-2xl text-white  lg:text-xl font-bold '>Products</button>
- <button className=' btn bg-gradient-to-r from-blue-500 to-purple-500 p-5 rounded-2xl text-white  lg:text-xl font-bold '>Carts</button>
+ <button  className=' btn bg-gradient-to-r from-blue-500 to-purple-500 p-5 rounded-2xl text-white  lg:text-xl font-bold ' onClick={()=>setCart("products")}>Products</button>
+ <button className=' btn bg-gradient-to-r from-blue-500 to-purple-500 p-5 rounded-2xl text-white  lg:text-xl font-bold ' onClick={()=>setCart("cart")} >Carts</button>
         </div>
 <div className='w-11/12 mx-auto my-5 grid lg:grid-cols-3 gap-6'>
-    {Datas.map((values)=>
+    {cart ==="products" &&
+        Datas?.map((values)=>(
 
-<Datacart values={values}></Datacart>
+ <Datacart key={values.id}  values={values}></Datacart>
 
-    )}
+    ))}
 </div>
 
-
+{cart ==="cart" &&  <Cart></Cart>}
 
 
 
