@@ -31,7 +31,7 @@ Automatically calculates and displays the total price of selected products.
 
 
 ✔ **Toast Notifications**
-Interactive toast messages appear when products are added to the cart.
+Interactive toast messages appear when products are added to the cart,removed from the cart,proceed to checkout.
 
 ---
 
