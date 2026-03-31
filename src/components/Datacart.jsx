@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
-
-const Datacart = ({values}) => {
+import { ToastContainer, toast } from 'react-toastify';
+const Datacart = ({values, cartData, setCartData }) => {
   
   const [buy, setBuy] = useState(false)
 
   const handleBuy = () => {
-    setBuy(true)
+  if (!cartData.find(item => item.id === values.id)) {
+    setCartData([...cartData, values]);
+    setBuy(true);
   }
+  toast.success("Item added to the cart")
+};
 
     return (
 
@@ -41,7 +45,7 @@ const Datacart = ({values}) => {
     </span>
   ))}
 </div>
-<button onClick={handleBuy} className='btn bg-gradient-to-r from-blue-500 to-purple-500 p-6 rounded-2xl w-full  text-white  lg:text-xl font-bold'>{buy?"Added to the cart":"Buy Now"}</button>
+<button type='button' onClick={handleBuy} className='btn bg-gradient-to-r from-blue-500 to-purple-500 p-6 rounded-2xl w-full  text-white  lg:text-xl font-bold'>{buy?"Added to the cart":"Buy Now"}</button>
 
 
 

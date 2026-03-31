@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-const Navbar = () => {
+const Navbar = ({cartCount}) => {
+  console.log(cartCount)
     return (
         <div className=''>
             <div className="navbar bg-base-100 shadow-sm">
@@ -11,7 +12,7 @@ const Navbar = () => {
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
       </div>
       <ul
-        tabIndex="-1"
+        tabIndex={-1}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
         <li><a>Products</a></li>
         <li><a>Features</a></li>
@@ -26,14 +27,20 @@ const Navbar = () => {
   <div className="navbar-center hidden lg:flex font-semibold">
     <ul className="menu menu-horizontal px-1">
       <li><a>Products</a></li>
-      <li><summary>Features</summary> </li>
+      <li><a>Features</a> </li>
       <li><a>Pricing</a></li>
        <li><a>Testimonials</a></li>
         <li><a>FAQ</a></li>
     </ul>
   </div>
   <div className="navbar-end gap-5">
-  <button className='btn rounded-full p-2'><FontAwesomeIcon icon={faCartShopping} /></button>
+
+  <button className='btn rounded-full p-2 relative '><FontAwesomeIcon icon={faCartShopping} /> {cartCount > 0 && (
+        <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-lg">
+          {cartCount}
+        </span>
+      )}</button>
+
   <button className='btn rounded-2xl'> Login</button>
     <a className="btn text-white font-bold bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl">Get Started</a>
 
