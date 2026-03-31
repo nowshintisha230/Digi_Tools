@@ -9,15 +9,15 @@ const Banner = () => {
     <div className='flex justify-center items-center'>
     <div className='w-11/12 mx-auto  px-5  '>
     <div className='mt-5'>
-  <div class="flex items-center gap-1 bg-[rgba(150,150,233,0.35)] rounded-full p-2 w-6/8 mx-auto lg:w-[38%] ">
-    <div class="w-4 h-4 rounded-full bg-[rgba(160,155,210,0.35)] flex items-center justify-center">
-      <div class="w-3 h-3 rounded-full bg-[rgba(140,100,190,0.55)] flex items-center justify-center">
-        <div class="w-2 h-2 rounded-full bg-[rgba(100,70,195,0.75)] flex items-center justify-center">
-          <div class="w-1 h-1 rounded-full bg-[#210be1]"></div>
+  <div className="flex items-center gap-1 bg-[rgba(150,150,233,0.35)] rounded-full p-2 w-fit mx-auto ">
+    <div className="w-4 h-4 rounded-full bg-[rgba(160,155,210,0.35)] flex items-center justify-center">
+      <div className="w-3 h-3 rounded-full bg-[rgba(140,100,190,0.55)] flex items-center justify-center">
+        <div className="w-2 h-2 rounded-full bg-[rgba(100,70,195,0.75)] flex items-center justify-center">
+          <div className="w-1 h-1 rounded-full bg-[#210be1]"></div>
         </div>
       </div>
     </div>
-    <span class="text-l font-thin text-[#1b11df]">New: AI-Powered Tools Available</span>
+    <span className="text-xs  font-thin text-[#1b11df] whitespace-nowrap">New: AI-Powered Tools Available</span>
       </div>
 
 <h1 className='my-2 text-3xl font-bold lg:text-5xl text-center'>Supercharge Your</h1>

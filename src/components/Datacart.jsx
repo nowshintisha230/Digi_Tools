@@ -4,7 +4,9 @@ const Datacart = ({values, cartData, setCartData }) => {
   
   const [buy, setBuy] = useState(false)
 
-  const handleBuy = () => {
+  const handleBuy = (e) => {
+      e.preventDefault();
+      console.log("clicked")
   if (!cartData.find(item => item.id === values.id)) {
     setCartData([...cartData, values]);
     setBuy(true);

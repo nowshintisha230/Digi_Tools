@@ -21,7 +21,7 @@ const Navbar = ({cartCount}) => {
         <li><a>FAQ</a></li>
       </ul>
     </div>
-   <a className="lg:pl-10 text-xl lg:text-2xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+   <a className="lg:pl-10 text-base sm:text-xl  lg:text-2xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
   DigiTools</a>
   </div>
   <div className="navbar-center hidden lg:flex font-semibold">
@@ -33,16 +33,17 @@ const Navbar = ({cartCount}) => {
         <li><a>FAQ</a></li>
     </ul>
   </div>
-  <div className="navbar-end gap-5">
+  <div className="navbar-end gap-4 ">
 
-  <button className='btn rounded-full p-2 relative '><FontAwesomeIcon icon={faCartShopping} /> {cartCount > 0 && (
+  <button className='btn-sm lg:btn btn rounded-full p-2 relative '><FontAwesomeIcon icon={faCartShopping} /> {cartCount > 0 && (
         <span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs font-bold rounded-full flex items-center justify-center shadow-lg">
           {cartCount}
         </span>
       )}</button>
 
-  <button className='btn rounded-2xl'> Login</button>
-    <a className="btn text-white font-bold bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl">Get Started</a>
+  <button className=' btn px-2 sm:px-4 text-xs sm:text-sm rounded-2xl'> Login</button>
+
+    <a className=" sm:px-4 text-l sm:text-sm   px-2 btn text-white font-bold bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl">Get Started</a>
 
   </div>
 </div>

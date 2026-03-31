@@ -16,8 +16,9 @@ const getData = async()=>{
   const res=await fetch('/data.json')
   return res.json();
 }
+ const getDataPromise=getData();
 function App() {
-  const getDataPromise=getData();
+ 
 const [cartData, setCartData] = useState([]);
   return (
     <>
